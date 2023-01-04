@@ -1,0 +1,2 @@
+# magetest
+Magento test environment
