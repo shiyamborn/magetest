@@ -59,3 +59,31 @@ sudo apt install redis
 redis-cli --version
 sudo systemctl status redis
 
+
+
+Install Magento
+===================================
+
+bin/magento setup:install \
+--base-url=http://localhost/magetest \
+--db-host=localhost \
+--db-name=magetest \
+--db-user=magetest \
+--db-password=Qazwsx@123 \
+--admin-firstname=admin \
+--admin-lastname=admin \
+--admin-email=shiyam.sundar@borngroup.com \
+--admin-user=admin \
+--admin-password=admin123 \
+--language=en_US \
+--currency=USD \
+--timezone=America/Chicago \
+--use-rewrites=1 \
+--search-engine=elasticsearch7 \
+--elasticsearch-host=localhost \
+--elasticsearch-port=9200 \
+--elasticsearch-index-prefix=magento2 \
+--elasticsearch-timeout=15
+
+
+
